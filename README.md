@@ -2,8 +2,8 @@
 
 Point your phone at the printed **Nebuta float** picture ([`target.png`](target.png)). When it is
 recognised, a short note tells you that you can begin, and on **OK** the festive sounds of the
-Nebuta Festival (Aomori) play over your live camera view. Two notes slide across the top: the
-festival, then how the floats are made (every **12 seconds**).
+Nebuta Festival (Aomori) play over your live camera view. Three notes slide across the top: the
+festival, how the sound is made, then the floats (every **12 seconds**).
 
 **Play locally:** `http://localhost:8132/` · **Without the picture:** `?demo=1` · **Without any camera:** `?preview=1`
 
