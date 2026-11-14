@@ -99,8 +99,10 @@ a.btn{display:inline-flex;align-items:center;justify-content:center;text-decorat
 /* ================= LISTENING HUD ================= */
 #hud{flex-direction:column;align-items:center;justify-content:space-between;gap:12px;
   padding:calc(var(--safe-t) + 8px) calc(var(--safe-r) + 10px) calc(var(--safe-b) + 12px) calc(var(--safe-l) + 10px)}
-.hud-top{display:flex;gap:8px;align-items:flex-start;width:100%;max-width:560px}
-.iconcol{display:flex;flex-direction:column;gap:6px;pointer-events:auto}
+.hud-top{position:relative;display:flex;align-items:flex-start;width:100%;max-width:420px;margin:0 auto}
+.iconcol{position:absolute;top:-10px;right:-10px;z-index:2;display:flex;flex-direction:column;gap:6px;pointer-events:auto}
+.iconbtn{width:40px!important;height:40px!important}
+.note h2{padding-right:22px}
 .iconbtn{width:46px;height:46px;border:0;border-radius:50%;background:var(--glass);color:var(--anatomy-strong);display:grid;place-items:center;
   box-shadow:var(--anatomy-lift),0 0 0 1px var(--anatomy-mid)}
 .iconbtn:active{transform:scale(.94)}
@@ -169,8 +171,8 @@ a.btn{display:inline-flex;align-items:center;justify-content:center;text-decorat
   .welcome p{font-size:18px}.welcome p.small{font-size:15px}
   .steps li{font-size:16px;padding:10px 12px}
   .hero{max-height:36vh}
-  .hud-top{max-width:640px;margin:0 auto;width:100%}
+  .hud-top{max-width:520px}
   .note{padding:18px 18px 6px}.note h2{font-size:26px}.note p{font-size:17px}
   .player{max-width:520px;margin-left:auto;margin-right:auto}
 }
-@media (min-width:1100px){.col{max-width:620px}.hud-top{max-width:720px}}
+@media (min-width:1100px){.col{max-width:620px}}
