@@ -1,9 +1,9 @@
 // The sound note strip: a music-app style player for one track.
 // Play / pause, ±10 s, a seek bar, time played on the left and time left on the right.
-// Optionally the last TRIM_END seconds of the voice note can be cut (0 = play it all): the track ends there and every
+// Optionally the last TRIM_END seconds of the voice note can be cut (2 for this note): the track ends there and every
 // time on screen is measured against the trimmed length.
 
-export const TRIM_END = 0;
+export const TRIM_END = 2;
 
 const fmt = (s) => {
   if (!isFinite(s) || s < 0) s = 0;
