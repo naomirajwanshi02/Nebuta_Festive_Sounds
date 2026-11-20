@@ -88,7 +88,7 @@ a.btn{display:inline-flex;align-items:center;justify-content:center;text-decorat
 /* ================= EXPLANATORY NOTE ================= */
 .welcome{padding:34px 20px 30px;text-align:center;display:flex;flex-direction:column;gap:10px;align-items:stretch}
 .welcome h1{margin:0;font-size:clamp(28px,8.5vw,36px);line-height:1.05;font-weight:900;color:var(--anatomy-strong)}
-.welcome p{margin:0;max-width:none;width:100%;font-size:15px;text-align:justify;text-align-last:center;hyphens:auto;-webkit-hyphens:auto}
+.welcome p{margin:0;max-width:none;width:100%;font-size:15px;text-align:justify;text-align-last:center}
 .welcome p.small{font-size:13px;color:var(--anatomy-muted);max-width:none}
 .hero{display:block;width:100%;height:auto;aspect-ratio:4/3;max-height:34vh;object-fit:contain;margin:0 auto;border-radius:8px}
 .steps{list-style:none;margin:4px 0 6px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px;text-align:left}
@@ -114,7 +114,7 @@ a.btn{display:inline-flex;align-items:center;justify-content:center;text-decorat
 .note{flex:0 0 100%;padding:14px 14px 4px;position:relative}
 .note h2{margin:0;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;font-size:22px;line-height:1.1;font-weight:900;color:var(--anatomy-strong)}
 .note h2 small{color:var(--anatomy-red);font-weight:700;font-size:14.5px}
-.note p{margin:5px 0 0;font-size:14px;line-height:1.38;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.note p{margin:5px 0 0;font-size:14px;line-height:1.38;text-align:justify}
 .note-foot{display:flex;align-items:center;justify-content:center;padding:2px 14px 8px}
 .dots{display:flex;gap:6px}
 .dots button{width:22px;height:22px;border:0;padding:0;background:none;display:grid;place-items:center}
@@ -176,3 +176,4 @@ a.btn{display:inline-flex;align-items:center;justify-content:center;text-decorat
   .player{max-width:520px;margin-left:auto;margin-right:auto}
 }
 @media (min-width:1100px){.col{max-width:620px}}
+*{hyphens:none;-webkit-hyphens:none}

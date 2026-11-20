@@ -154,7 +154,11 @@ $('permBtn').addEventListener('click', askCamera);
 $('scanRetry').addEventListener('click', () => { stopScan(); openScan(); });
 $('scanSkip').addEventListener('click', () => { stopScan(); overlay('guide', false); openIntro(); });
 $('goBtn').addEventListener('click', begin);
-$('closeBtn').addEventListener('click', () => { player.pause(); clearTimeout(S.noteT); overlay('hud', false); openScan(); });
+$('closeBtn').addEventListener('click', () => {
+  // opened from the Festive Sounds hub: the cross goes back to its scan screen
+  if (q.has('from')){ location.href = 'https://naomirajwanshi02.github.io/Festive_Sounds/'; return; }
+  player.pause(); clearTimeout(S.noteT); overlay('hud', false); openScan();
+});
 $('errBtn').addEventListener('click', () => { $('err').hidden = true; location.reload(); });
 
 // MindAR's own listeners can throw after a failed camera start; the screen already says what to do.
