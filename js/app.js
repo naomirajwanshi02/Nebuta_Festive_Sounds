@@ -154,6 +154,7 @@ $('permBtn').addEventListener('click', askCamera);
 $('scanRetry').addEventListener('click', () => { stopScan(); openScan(); });
 $('scanSkip').addEventListener('click', () => { stopScan(); overlay('guide', false); openIntro(); });
 $('goBtn').addEventListener('click', begin);
+$('introClose').addEventListener('click', () => { $('goBtn').disabled = false; show(null); openScan(); });
 $('closeBtn').addEventListener('click', () => {
   // opened from the Festive Sounds hub: the cross goes back to its scan screen
   if (q.has('from')){ location.href = 'https://naomirajwanshi02.github.io/Festive_Sounds/'; return; }
