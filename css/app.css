@@ -86,7 +86,7 @@ a.btn{display:inline-flex;align-items:center;justify-content:center;text-decorat
 .frame .sweep{left:10%;right:10%}
 
 /* ================= EXPLANATORY NOTE ================= */
-.welcome{padding:34px 20px 30px;text-align:center;display:flex;flex-direction:column;gap:10px;align-items:stretch}
+.welcome{padding:60px 20px 30px;text-align:center;display:flex;flex-direction:column;gap:10px;align-items:stretch}
 .welcome h1{margin:0;font-size:clamp(28px,8.5vw,36px);line-height:1.05;font-weight:900;color:var(--anatomy-strong)}
 .welcome p{margin:0;max-width:none;width:100%;font-size:15px;text-align:justify;text-align-last:center}
 .welcome p.small{font-size:13px;color:var(--anatomy-muted);max-width:none}
@@ -104,10 +104,10 @@ a.btn{display:inline-flex;align-items:center;justify-content:center;text-decorat
 .notes.gone{display:none}
 .notecross{position:absolute;top:8px;right:8px;z-index:2;width:30px;height:30px;border:0;border-radius:50%;background:var(--anatomy-shade-3);color:var(--anatomy-strong);display:grid;place-items:center;cursor:pointer}
 .notecross:active{transform:scale(.92)}
-#infoBtn[aria-pressed="true"]{opacity:.45}
+
 .iconbtn{width:40px!important;height:40px!important}
 .note h2{padding-right:34px}
-.introclose{position:absolute;top:10px;right:10px;z-index:2;pointer-events:auto;background:var(--anatomy-shade-3)}
+.introclose{position:absolute;top:12px;right:12px;z-index:2;pointer-events:auto;background:var(--anatomy-shade-3)}
 .iconbtn{width:46px;height:46px;border:0;border-radius:50%;background:var(--glass);color:var(--anatomy-strong);display:grid;place-items:center;
   box-shadow:var(--anatomy-lift),0 0 0 1px var(--anatomy-mid)}
 .iconbtn:active{transform:scale(.94)}
@@ -166,13 +166,13 @@ a.btn{display:inline-flex;align-items:center;justify-content:center;text-decorat
 .errbox pre{white-space:pre-wrap;font-size:11px;max-height:34vh;overflow:auto}
 
 /* short screens: tighten the explanatory note */
-@media (max-height:700px){.hero{max-height:24vh}.welcome{gap:8px;padding-top:30px}.steps li{padding:6px 8px;font-size:12.5px}}
+@media (max-height:700px){.hero{max-height:24vh}.welcome{gap:8px;padding-top:56px}.steps li{padding:6px 8px;font-size:12.5px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 /* tablets and large screens: everything scales up and stays centred */
 @media (min-width:700px){
   .col{max-width:560px}
-  .welcome{padding:40px 32px 34px;gap:14px}
+  .welcome{padding:64px 32px 34px;gap:14px}
   .welcome p{font-size:18px}.welcome p.small{font-size:15px}
   .steps li{font-size:16px;padding:10px 12px}
   .hero{max-height:36vh}

@@ -183,5 +183,8 @@ function notesOpen(on){
   $('infoBtn').setAttribute('aria-pressed', on);
 }
 $('noteClose').addEventListener('click', () => notesOpen(false));
-$('infoBtn').addEventListener('click', () => { notesOpen(true); goNote(S.note); });
+$('infoBtn').addEventListener('click', () => {
+  const open = $('notes').classList.contains('gone');
+  notesOpen(open); if (open) goNote(S.note);
+});
 notesOpen(true);
