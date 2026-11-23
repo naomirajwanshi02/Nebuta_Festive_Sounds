@@ -1,5 +1,5 @@
 // Nebuta Festive Sounds: allow the camera → scan the Nebuta float picture →
-// a short explanatory note → OK starts the sound note, and the notes at the top
+// a short explanatory note → Start starts the sound note, and the notes at the top
 // (the float, then the festival) slide over one another every 12 seconds.
 //
 // ?demo=1     skip the picture (camera still on as the background)
@@ -89,7 +89,7 @@ function openIntro(){
   show('intro');
 }
 
-// OK: the tap also unlocks audio playback on phones.
+// Start: the tap also unlocks audio playback on phones.
 async function begin(){
   $('goBtn').disabled = true;
   player.play();

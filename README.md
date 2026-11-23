@@ -1,7 +1,7 @@
 # 🏮 Nebuta Festive Sounds: a scan-to-listen WebAR sound note
 
 Point your phone at the printed **Nebuta float** picture ([`target.png`](target.png)). When it is
-recognised, a short note tells you that you can begin, and on **OK** the festive sounds of the
+recognised, a short note tells you that you can begin, and on **Start** the festive sounds of the
 Nebuta Festival (Aomori) play over your live camera view. Three notes slide across the top: the
 festival, how the sound is made, then the floats (every **12 seconds**).
 
