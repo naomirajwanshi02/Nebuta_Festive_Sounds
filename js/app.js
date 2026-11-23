@@ -172,3 +172,12 @@ window.__nebuta = { S, goNote, begin, audio };
 if (q.has('preview')){ $('ar').classList.add('preview'); openIntro(); }
 else if (q.has('demo')) openIntro();
 else openPerm();
+
+// the notes panel: its cross hides it, the i button (outside, under the interaction cross) brings it back
+function notesOpen(on){
+  $('notes').classList.toggle('gone', !on);
+  $('infoBtn').setAttribute('aria-pressed', on);
+}
+$('noteClose').addEventListener('click', () => notesOpen(false));
+$('infoBtn').addEventListener('click', () => { notesOpen(true); goNote(S.note); });
+notesOpen(true);
